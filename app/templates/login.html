@@ -1,0 +1,22 @@
+<ion-view view-title="Login" hide-nav-bar="true">
+  <ion-content class="padding stable">
+    <form>
+      <div class="list list-inset">
+        <label class="item item-input">
+    <i class="icon ion-person placeholder-icon"></i>
+    <input type="number" placeholder="DNI" ng-model="credentials.dni">
+  </label>
+      </div>
+      <div class="list list-inset">
+        <label class="item item-input">
+    <i class="icon ion-locked placeholder-icon"></i>
+    <input type="password" placeholder="Contraseña" ng-model="credentials.password">
+  </label>
+      </div>
+      <ion-spinner icon="android" class="spinner-positive" ng-show="spinner"></ion-spinner>
+      <button class="button button-block button-positive" ng-click="login()" ng-disabled="spinner">
+        Ingresar
+      </button>
+    </form>
+  </ion-content>
+</ion-view>
