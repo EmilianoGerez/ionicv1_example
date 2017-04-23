@@ -111,6 +111,15 @@ angular.module('App', ['ionic', 'ngCordova', 'ngAnimate'])
               controller: 'DashboardCtrl'
             }
           }
+        }).state('private.mapview', {
+          url: "/mapview",
+          cache: false,
+          views: {
+            'content@private': {
+              templateUrl: "templates/mapview.view.html",
+              controller: 'MapCtrl'
+            }
+          }
         });
 
       $urlRouterProvider.otherwise(function($injector, $location) {

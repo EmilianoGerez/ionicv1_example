@@ -36,7 +36,7 @@ gulp.task('serve:before', ['watch']);
 gulp.task('default', ['sass', 'index', 'scripts', 'styles', 'templates', 'images', 'lib']);
 
 gulp.task('serve', function (done) {
-    sh.exec('ionic serve', done);
+    sh.exec('ionic serve --lab', done);
 });
 
 gulp.task('sass', function (done) {
