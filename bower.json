@@ -1,5 +1,5 @@
 {
-  "name": "App",
+  "name": "app",
   "private": true,
   "devDependencies": {
     "ionic": "driftyco/ionic-bower#master"
